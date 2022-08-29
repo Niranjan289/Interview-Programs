@@ -17,6 +17,7 @@ public class CountOccurrences {
 		Set<Integer> sst = new HashSet<>( Arrays.stream(array).boxed().collect(Collectors.toList()));
 		
 		List<Integer> collect = new ArrayList<>(sst);
+		
 		 int[] primitive = collect.stream()
                  .mapToInt(Integer::intValue)
                  .toArray();
